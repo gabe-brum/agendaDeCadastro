@@ -19,7 +19,7 @@
     session_start();
 
     // Inclui o menu
-    include_once("include/menu.php");
+    include_once "include/menu.php";
     ?>
 
     <div class="container">
@@ -58,6 +58,10 @@
                     <div class="form-group">
                         <label for="logradouro">Logradouro</label>
                         <input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="Insira seu logradouro">
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Número</label>
+                        <input type="number" class="form-control" name="numero" id="numero" placeholder="Insira o número">
                     </div>
                     <div class="form-group">
                         <label for="bairro">Bairro</label>
