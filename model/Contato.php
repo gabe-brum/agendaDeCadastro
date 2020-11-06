@@ -7,13 +7,13 @@ class Contato
     private $sobrenome;
     private $email;
     private $senha;
-    private $telefone;
-    private $cep;
-    private $logradouro;
-    private $numero;
-    private $cidade;
-    private $bairro;
-    private $uf;
+    // private $telefone;
+    // private $cep;
+    // private $logradouro;
+    // private $numero;
+    // private $cidade;
+    // private $bairro;
+    // private $uf;
 
     // Métodos Mágicos (get e set)
     public function __get($valor)

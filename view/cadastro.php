@@ -28,54 +28,57 @@
             <div class="col-lg-4">
                 <h3>Cadastro de contato</h3>
 
-                <form action="../controller/contatoController.php" method="post">
+                <form>
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Insira seu nome">
+                        <input type="text" class="form-control" id="nome" placeholder="Insira seu nome">
                     </div>
                     <div class="form-group">
                         <label for="nome">Sobrenome</label>
-                        <input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome">
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Insira seu sobrenome">
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Insira seu e-mail">
+                        <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail">
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input type="password" class="form-control" name="senha" id="senha" placeholder="Insira uma senha">
+                        <input type="password" class="form-control" id="senha" placeholder="Insira uma senha">
                         <img id="olho" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0bv2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4NL40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq8AAAAASUVORK5CYII=" />
                     </div>
-                    <div class="form-group">
+
+                    <!-- Campos sem cadastramento no DB -->
+
+                    <!-- <div class="form-group">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control phone" name="telefone" id="telefone" placeholder="Insira seu telefone">
+                        <input type="text" class="form-control phone" id="telefone" placeholder="Insira seu telefone">
                     </div>
                     <div class="form-group">
                         <label for="cep">CEP</label>
-                        <input type="number" class="form-control" name="cep" id="cep" placeholder="Insira seu CEP">
+                        <input type="number" class="form-control" id="cep" placeholder="Insira seu CEP">
                     </div>
                     <button type="button" class="btn btn-light" onclick="buscarCEP()">Buscar</button>
                     <div class="form-group">
                         <label for="logradouro">Logradouro</label>
-                        <input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="Insira seu logradouro">
+                        <input type="text" class="form-control" id="logradouro" placeholder="Insira seu logradouro">
                     </div>
                     <div class="form-group">
                         <label for="numero">Número</label>
-                        <input type="number" class="form-control" name="numero" id="numero" placeholder="Insira o número">
+                        <input type="number" class="form-control" id="numero" placeholder="Insira o número">
                     </div>
                     <div class="form-group">
                         <label for="bairro">Bairro</label>
-                        <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Insira seu bairro">
+                        <input type="text" class="form-control" id="bairro" placeholder="Insira seu bairro">
                     </div>
                     <div class="form-group">
                         <label for="cidade">Cidade</label>
-                        <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Insira sua cidade">
+                        <input type="text" class="form-control" id="cidade" placeholder="Insira sua cidade">
                     </div>
                     <div class="form-group">
                         <label for="uf">UF</label>
-                        <input type="text" class="form-control" name="uf" id="uf" placeholder="Insira o UF">
-                    </div>
-                    <button class="btn btn-primary">Cadastrar</button>
+                        <input type="text" class="form-control" id="uf" placeholder="Insira o UF">
+                    </div> -->
+                    <button id="cadastrar" type="button" class="btn btn-primary" onclick="cadastrarContato()">Cadastrar</button>
                 </form>
                 <div id="status"></div>
             </div>

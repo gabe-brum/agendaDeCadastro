@@ -13,7 +13,7 @@
 <body>
 
     <?php
-    include_once("include/menu.php");
+    include_once "include/menu.php";
     ?>
 
     <div class="container">
@@ -24,14 +24,14 @@
 
                 <form>
                     <div class="form-group">
-                        <label for="nome">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail" required>
                     </div>
                     <div class="form-group">
-                        <label for="nome">Senha</label>
-                        <input type="password" class="form-control" id="senha" placeholder="Insira sua senha">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Insira sua senha" required>
                     </div>
-                    <button id="login" onclick="efetuarLogin()" type="button" class="btn btn-primary">Logar</button>
+                    <button id="login" onclick="efetuarLogin()"  type="button" class="btn btn-primary">Logar</button>
                 </form>
                 <div id="status"></div>
             </div>

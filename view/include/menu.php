@@ -20,14 +20,21 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <?php
-                                    echo $_SESSION['nome'] . " " . $_SESSION['sobrenome'];
+                                    echo $_SESSION['nome'];
+                                    // . " " . $_SESSION['sobrenome'];
                                     ?>
                                     <span class="caret"></span>
                                     </a>
 
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="#" id="logout" onclick="efetuarLogout()" data-toggle="modal" data-target="#modalLogout">Logout</a>
+                                            <a href="#" id="logout" onclick="efetuarLogout()">Logout</a>
+                                        </li>
+                                        <li>
+                                            <a href="editar.php" id="editar" onclick="editarContato()">Editar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="excluir" onclick="excluirContato()">Excluir</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -46,4 +53,4 @@
 </nav>
 
 <!-- modal -->
-<div id="modalLogout" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-hidden="true"></div>
+<div id="modalLoading" class="modal-loading animated bounceIn"></div>
